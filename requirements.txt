@@ -1,0 +1,7 @@
+anthropic
+openwakeword
+faster-whisper
+sounddevice
+numpy
+piper-tts
+python-dotenv

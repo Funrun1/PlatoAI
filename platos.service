@@ -1,0 +1,13 @@
+[Unit]
+Description=Platos voice assistant
+After=network-online.target sound.target
+
+[Service]
+User=yourname
+WorkingDirectory=/home/yourname/platos
+EnvironmentFile=/home/yourname/platos/.env
+ExecStart=/home/yourname/platos/.venv/bin/python assistant.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
